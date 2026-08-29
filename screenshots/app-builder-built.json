@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "AI Tax Strategy Advisors",
+      "hasCanvas": false,
+      "bodyTextLen": 5619,
+      "bodyTextHash": "881763cd6257073727a137bc674685f11886185a122fd9157d5fbb184a4ae82d",
+      "bodyTextPrefix": "Skip to content AI Tax Strategy Advisors Platform Studio Capabil",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "AI Tax Strategy Advisors",
+      "hasCanvas": false,
+      "bodyTextLen": 5512,
+      "bodyTextHash": "b36c1a4e38da9654c84cad5ac104d59e41bd9fd2d4b6123ac84bfbf8bd61394b",
+      "bodyTextPrefix": "Skip to content AI Tax PRIVATE WEALTH × TAX × AI Tax planning bu",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
