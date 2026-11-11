@@ -57,7 +57,7 @@ export function WorkbenchPreview() {
             <div>
               <p className="text-sm font-medium text-ink">Planning dashboard</p>
               <p className="mt-0.5 text-micro text-muted">
-                Golden case · $750k profit · MFJ
+                Illustrative scenario · $750k profit · MFJ
               </p>
             </div>
             <div className="flex rounded-md bg-paper p-0.5 shadow-border">

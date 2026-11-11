@@ -142,6 +142,21 @@
     background-size: 44px 44px;
     mask-image: linear-gradient(to bottom, black, transparent 82%);
   }
+
+  .brand-emblem {
+    display: block;
+    flex: none;
+    width: 3.25rem;
+    height: 2.65rem;
+    overflow: hidden;
+  }
+
+  .brand-emblem img {
+    display: block;
+    width: auto;
+    max-width: none;
+    height: 100%;
+  }
 }
 
 @keyframes rise {

@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -7,7 +7,6 @@ import {
   PLATFORM,
   PRINCIPLES,
   SCREENSHOTS,
-  SITE,
   TRUST,
 } from "@/lib/site";
 
@@ -80,7 +79,7 @@ export function FeaturesSection() {
           </div>
           <Button asChild variant="outline">
             <Link to="/capabilities">
-              View capability matrix
+              Explore capabilities
               <ArrowRight />
             </Link>
           </Button>
@@ -120,12 +119,11 @@ export function PrinciplesSection() {
           Trust architecture
         </p>
         <h2 className="mt-3 max-w-3xl font-display text-display font-medium">
-          Professional-grade AI should know what it knows — and what it does not.
+              Thoughtful technology for thoughtful tax advice.
         </h2>
         <p className="mt-5 max-w-2xl text-lead text-sky">
-          Calculations come from controlled engines, legal conclusions are
-          grounded in authority, and unresolved issues are escalated rather than
-          dressed up as certainty.
+          A planning experience built around clear calculations, connected
+          scenarios, and the expertise of the professional guiding the decision.
         </p>
         <div className="mt-12 grid gap-4 lg:grid-cols-3">
           {PRINCIPLES.map((p) => (
@@ -144,7 +142,7 @@ export function PrinciplesSection() {
               <p className="mt-3 text-sm leading-relaxed text-sky">{p.body}</p>
               {p.featured ? (
                 <Badge variant="navy" className="mt-6">
-                  Confidence is not authority
+                  Professional judgment first
                 </Badge>
               ) : null}
             </article>
@@ -153,7 +151,7 @@ export function PrinciplesSection() {
         <div className="mt-10">
           <Button asChild variant="ghost">
             <Link to="/architecture">
-              Read the architecture
+              Explore our approach
               <ArrowRight />
             </Link>
           </Button>
@@ -198,18 +196,15 @@ export function FounderSection() {
             Built from the reviewer's side of the table.
           </h2>
           <p className="mt-6 max-w-xl text-lead text-muted">
-            Sophisticated tax work is rarely difficult because someone cannot
-            produce an answer. It is difficult because the answer has to survive{" "}
-            <span className="text-ink">facts, authority, calculation, review, and judgment</span>.
+            Sophisticated tax planning calls for a clear view of the facts,
+            the calculations, and the choices in front of each client.
           </p>
           <p className="mt-4 max-w-xl text-lead text-muted">
-            AI Tax Strategy Advisors is an effort to build technology around that
-            standard — not around the idea that a model should answer every
-            question placed in front of it.
+            AI Tax Strategy Advisors brings that perspective to a modern
+            planning experience for private wealth professionals.
           </p>
           <blockquote className="mt-8 max-w-xl border-l-2 border-accent bg-paper-2 px-5 py-4 text-base leading-relaxed text-navy-2">
-            The goal is not “AI that knows taxes.” The goal is a planning system
-            whose work can be inspected, challenged, and reviewed.
+            Better planning starts with the questions that matter to the client.
           </blockquote>
         </div>
       </div>
@@ -223,27 +218,22 @@ export function CtaSection() {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 rounded-2xl bg-navy px-6 py-12 text-paper sm:px-10 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="text-2xs font-medium uppercase tracking-[0.16em] text-sky">
-            Live professional preview
+            Professional beta
           </p>
           <h2 className="mt-3 max-w-xl font-display text-display font-medium">
-            See the Tax Planning Workbench in action.
+            Explore the planning experience.
           </h2>
           <p className="mt-4 max-w-lg text-sky">
-            The public environment is for demonstration and evaluation. Use
-            fictional or de-identified information only.
+            Start with an interactive example and see how different assumptions
+            can shape a planning conversation.
           </p>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row">
           <Button asChild variant="inverse">
-            <a href={SITE.workbench} target="_blank" rel="noreferrer">
-              Open the workbench
-              <ArrowUpRight />
-            </a>
-          </Button>
-          <Button asChild variant="ghost">
-            <a href={SITE.github} target="_blank" rel="noreferrer">
-              View the repository
-            </a>
+            <Link to="/demo">
+              Try the Studio
+              <ArrowRight />
+            </Link>
           </Button>
         </div>
       </div>

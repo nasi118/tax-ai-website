@@ -1,8 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { WorkbenchPreview } from "@/components/home/workbench-preview";
 import { Button } from "@/components/ui/button";
-import { SITE } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -18,29 +17,28 @@ export function Hero() {
             Tax planning built for decisions that happen before the return.
           </h1>
           <p className="mt-6 max-w-xl text-lead text-sky">
-            A professional planning environment for modeling complex federal tax
-            decisions, comparing strategies, and turning technical analysis into
-            reviewable recommendations — with the engine, not the model, as
-            calculation authority.
+            A professional planning platform for exploring federal tax
+            strategies, comparing scenarios, and bringing the details of a
+            client's financial life into a clearer conversation.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild variant="inverse">
-              <a href={SITE.workbench} target="_blank" rel="noreferrer">
-                Explore the workbench
-                <ArrowUpRight />
-              </a>
-            </Button>
-            <Button asChild variant="ghost">
               <Link to="/demo">
-                Try the studio
+                Try the Studio
                 <ArrowRight />
               </Link>
+            </Button>
+            <Button asChild variant="ghost">
+              <a href="/#platform">
+                Explore the platform
+                <ArrowRight />
+              </a>
             </Button>
           </div>
           <dl className="mt-10 flex flex-wrap gap-x-8 gap-y-3 border-t border-line-dark pt-6 text-2xs font-medium uppercase tracking-wider text-subtle">
             <div>
               <dt className="sr-only">Status</dt>
-              <dd>Professional preview</dd>
+              <dd>Professional beta</dd>
             </div>
             <div>
               <dt className="sr-only">Years</dt>

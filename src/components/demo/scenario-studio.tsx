@@ -15,6 +15,11 @@ import {
 import { cn } from "@/lib/utils";
 
 const STATUSES: FilingStatus[] = ["mfj", "single", "hoh", "mfs"];
+const PRESET_DESCRIPTIONS: Record<string, string> = {
+  golden: "Married filing jointly, with itemized deductions and owner compensation.",
+  consulting: "Married filing jointly, with the standard deduction.",
+  sstb: "A specified service business in the QBI phase-out range.",
+};
 
 export function ScenarioStudio() {
   const [input, setInput] = useState<PlanInput>({ ...GOLDEN_INPUT });
@@ -72,7 +77,7 @@ export function ScenarioStudio() {
                   presetId === p.id ? "text-sky" : "text-muted",
                 )}
               >
-                {p.hint}
+                {PRESET_DESCRIPTIONS[p.id] ?? p.hint}
               </span>
             </button>
           ))}
@@ -204,8 +209,7 @@ export function ScenarioStudio() {
           <div className="border-b border-line px-5 py-3">
             <h3 className="text-sm font-medium text-ink">Calculation trace</h3>
             <p className="text-2xs text-muted">
-              Line items from the studio engine. The live workbench carries
-              ENGINE_VERSION / RULES_VERSION on every result.
+              Explore the line items behind the selected scenario.
             </p>
           </div>
           <table className="w-full text-sm">

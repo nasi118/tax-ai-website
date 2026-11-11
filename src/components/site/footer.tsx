@@ -8,9 +8,8 @@ export function Footer() {
         <div className="max-w-md text-sm text-muted">
           <p className="font-medium text-ink">{SITE.name}</p>
           <p className="mt-2 leading-relaxed">
-            Professional evaluation prototype. Planning estimates require
-            professional review against current law, source documents, and
-            applicable federal and state rules. Not tax advice.
+            A professional tax-planning platform, currently in beta. The
+            Studio uses illustrative figures and supports professional judgment.
           </p>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
@@ -21,24 +20,8 @@ export function Footer() {
             Capabilities
           </Link>
           <Link to="/architecture" className="text-muted hover:text-ink">
-            Architecture
+            Our approach
           </Link>
-          <a
-            href={SITE.github}
-            target="_blank"
-            rel="noreferrer"
-            className="text-muted hover:text-ink"
-          >
-            GitHub
-          </a>
-          <a
-            href={SITE.workbench}
-            target="_blank"
-            rel="noreferrer"
-            className="text-muted hover:text-ink"
-          >
-            Live workbench
-          </a>
         </div>
       </div>
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 border-t border-line px-4 py-5 text-xs text-subtle sm:flex-row sm:justify-between sm:px-6">

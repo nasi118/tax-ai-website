@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Wordmark } from "@/components/site/logo";
@@ -45,10 +45,10 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <Button asChild size="sm" className="hidden sm:inline-flex">
-            <a href={SITE.workbench} target="_blank" rel="noreferrer">
-              Open workbench
-              <ArrowUpRight />
-            </a>
+            <Link to="/demo">
+              Try the Studio
+              <ArrowRight />
+            </Link>
           </Button>
           <button
             type="button"
@@ -90,16 +90,14 @@ export function Header() {
               </a>
             ),
           )}
-          <a
-            href={SITE.workbench}
-            target="_blank"
-            rel="noreferrer"
+          <Link
+            to="/demo"
             className="mt-2 inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-accent text-sm font-medium text-accent-fg"
             onClick={() => setOpen(false)}
           >
-            Open workbench
-            <ArrowUpRight className="size-4" />
-          </a>
+            Try the Studio
+            <ArrowRight className="size-4" />
+          </Link>
         </nav>
       </div>
     </header>
